@@ -7,6 +7,10 @@ import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 
 const Tech = () => {
+  const isAndroid = navigator.userAgent.includes("Android");
+  const rendered_technologies = isAndroid
+    ? technologies.slice(0, 4)
+    : technologies;
   return (
     <>
       {/* 标题大字部分 */}
@@ -15,7 +19,7 @@ const Tech = () => {
         <h2 className={styles.sectionHeadText}>Tech Stacks</h2>
       </motion.div> */}
       <div className="flex flex-row flex-wrap justify-center gap-10 ">
-        {technologies.map((technology) => {
+        {rendered_technologies.map((technology) => {
           return (
             <div className="w-28 h-28" key={technology.name}>
               <BallCanvas icon={technology.icon} />
