@@ -15,10 +15,10 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  xiaomi,
+  xingye,
+  tencent,
+  alibaba,
   carrent,
   jobit,
   tripguide,
@@ -118,7 +118,7 @@ const experiences = [
   {
     title: "Software Engineer Intern",
     company_name: "Alibaba Group",
-    icon: starbucks,
+    icon: alibaba,
     iconBg: "#383E56",
     date: "June 2023 - September 2023",
     points: [
@@ -131,7 +131,7 @@ const experiences = [
   {
     title: "Software Engineer Intern",
     company_name: "Industrial Securities",
-    icon: tesla,
+    icon: xingye,
     iconBg: "#E6DEDD",
     date: "June 2022 - September 2022",
     points: [
@@ -142,7 +142,7 @@ const experiences = [
   {
     title: "Data Analyst Intern",
     company_name: "Tencent",
-    icon: shopify,
+    icon: tencent,
     iconBg: "#383E56",
     date: "June 2021 - Sepetember 2021",
     points: [
@@ -154,7 +154,7 @@ const experiences = [
   {
     title: "Software Engineer Intern",
     company_name: "Xiaomi",
-    icon: meta,
+    icon: xiaomi,
     iconBg: "#E6DEDD",
     date: "January 2021 - April 2021",
     points: [
