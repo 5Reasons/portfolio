@@ -4,13 +4,13 @@
 #rotate {
   font-family: "Vibur";
   color: #c6e2ff;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #915eff, 0 0 0.5em #915eff,
+  text-shadow: 0 -10px 100px, 0 0 1px, 0 0 0.2em #915eff, 0 0 0.1em #915eff,
     0 0 0.1em #915eff, 0 10px 3px #000;
 }
 #logo b {
   font-family: "Pacifico";
   color: #c6e2ff;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #915eff, 0 0 0.5em #915eff,
+  text-shadow: 0 -10px 100px, 0 0 1px, 0 0 0.1em #915eff, 0 0 0.1em #915eff,
     0 0 0.1em #915eff, 0 10px 3px #000;
 }
 #logo b span {

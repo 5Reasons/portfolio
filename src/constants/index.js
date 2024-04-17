@@ -122,7 +122,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "June 2023 - September 2023",
     points: [
-      "Developing and maintaining web aResponsible for the mobile H5 pages development of the entire allowance shop in 9Game's new app project,including goods details, exchange process, game search, trade records pages. (Tech stack: React, TS)pplications using React.js and other related technologies.",
+      "Responsible for the mobile H5 pages development of the entire allowance shop in 9Game's new app project,including goods details, exchange process, game search, trade records pages (Tech stack: React, TS).",
       "Encapsulated 3 common business components with API documentation, utilized in 10+ different scenarios.",
       "Provided 2 custom React Hooks to enhance user experience details on H5 pages within the Android app.",
       "Initiated some innovative projects, e.g. integrated LLM ability with DingTalk bot, build Chrome extensions.",
