@@ -1,8 +1,49 @@
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { toRotateText } from "../constants/index";
+import "./logo.css";
 
 const Hero = () => {
+  const [text, setText] = useState("");
+
+  const period = 2000;
+
+  const loopNum = useRef(0);
+  const isDeleting = useRef(false);
+  const delta = useRef(300 - Math.random() * 100);
+
+  const tick = useCallback(() => {
+    let i = loopNum.current % toRotateText.length;
+    let fullText = toRotateText[i];
+    let updatedText = isDeleting.current
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting.current) {
+      delta.current /= 1.9;
+    }
+
+    if (!isDeleting.current && updatedText === fullText) {
+      isDeleting.current = true;
+      delta.current = period;
+    } else if (isDeleting.current && updatedText === "") {
+      isDeleting.current = false;
+      loopNum.current++;
+      delta.current = 400;
+    } else if (!isDeleting.current && updatedText !== "") {
+      delta.current = 50;
+    }
+  }, [text]);
+
+  useEffect(() => {
+    const ticker = setInterval(tick, delta.current);
+    return () => clearInterval(ticker);
+  }, [tick]);
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -14,12 +55,24 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText}`}>
+          {/* <h1 className={`${styles.heroHeadText}`}>
             Hi, I'm <span className="text-[#915eff]">Ruizheng</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          </h1> */}
+          <div id="logo" className={`${styles.heroHeadText}`}>
+            <b>
+              <span>Hi, </span>I'm <span>Ruizheng</span>
+            </b>
+          </div>
+          {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             A Full-Stack Engineer <br />A Photographer(考虑做轮播) <br />
             这里也可以考虑把我的那些霓虹灯、赛博特效加上
+          </p> */}
+          <p className={`${styles.heroRotateText}`}>
+            <span className="txt-rotate">
+              <span className="wrap" id="rotate">
+                {text}
+              </span>
+            </span>
           </p>
         </div>
       </div>

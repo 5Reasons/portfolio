@@ -262,4 +262,18 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const toRotateText = [
+  "A Software Engineer",
+  "A Photographer",
+  "A Football Fan",
+  "A Indie Music Lover",
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  toRotateText,
+};
