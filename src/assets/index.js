@@ -22,6 +22,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import alibaba from "./company/alibaba.jpeg";
+import hkex from "./company/hkex.jpeg";
 import xingye from "./company/xingye.jpeg";
 import tencent from "./company/tencent.jpeg";
 import xiaomi from "./company/xiaomi.jpeg";
@@ -53,6 +54,7 @@ export {
   typescript,
   threejs,
   alibaba,
+  hkex,
   tencent,
   xingye,
   xiaomi,

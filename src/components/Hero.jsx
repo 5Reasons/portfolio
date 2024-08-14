@@ -60,7 +60,7 @@ const Hero = () => {
           </h1> */}
           <div id="logo" className={`${styles.heroHeadText}`}>
             <b>
-              <span>Hi, </span>I'm <span>Ruizheng</span>
+              <span>Hi, </span>I'm <span>Reeson</span>
             </b>
           </div>
           {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}>

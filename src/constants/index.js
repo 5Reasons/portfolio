@@ -19,6 +19,7 @@ import {
   xingye,
   tencent,
   alibaba,
+  hkex,
   carrent,
   jobit,
   tripguide,
@@ -115,6 +116,17 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Graduate Associate - Technology",
+    company_name: "HKEX",
+    icon: hkex,
+    iconBg: "#E6DEDD",
+    date: "August 2024 - Now",
+    points: [
+      "A Graduate Program like Management Trainee, will rotate in 4 departments in 2 years.",
+      "1st Rotation: Listing and Corporate Systems - HR & Finance Systems",
+    ],
+  },
   {
     title: "Software Engineer Intern",
     company_name: "Alibaba Group",
