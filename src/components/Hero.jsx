@@ -12,30 +12,30 @@ const Hero = () => {
 
   const loopNum = useRef(0);
   const isDeleting = useRef(false);
-  const delta = useRef(300 - Math.random() * 100);
+  const delta = useRef(200 - Math.random() * 100);
 
   const tick = useCallback(() => {
-    let i = loopNum.current % toRotateText.length;
-    let fullText = toRotateText[i];
+    let i = loopNum.current % toRotateText.length; // 获取当前循环文本的索引
+    let fullText = toRotateText[i]; // 当前要显示的完整文本
     let updatedText = isDeleting.current
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
+      ? fullText.substring(0, text.length - 1) // 删除字符
+      : fullText.substring(0, text.length + 1); // 添加字符
 
-    setText(updatedText);
+    setText(updatedText); // 更新组件状态中的文本
 
     if (isDeleting.current) {
-      delta.current /= 1.9;
+      delta.current /= 1.4; // 如果正在删除字符，减少时间间隔，加快删除速度
     }
 
     if (!isDeleting.current && updatedText === fullText) {
-      isDeleting.current = true;
-      delta.current = period;
+      isDeleting.current = true; // 如果添加完所有字符，开始删除
+      delta.current = period; // 删除前等待 2 秒
     } else if (isDeleting.current && updatedText === "") {
-      isDeleting.current = false;
-      loopNum.current++;
-      delta.current = 400;
+      isDeleting.current = false; // 如果所有字符都删除完毕，开始添加下一个文本
+      loopNum.current++; // 循环下一个文本
+      delta.current = 800; // 开始打字前等待 800 毫秒
     } else if (!isDeleting.current && updatedText !== "") {
-      delta.current = 50;
+      delta.current = 50; // 正在打字时的时间间隔，模拟打字速度
     }
   }, [text]);
 
@@ -47,14 +47,15 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-col items-center`}
       >
-        <div className="flex flex-col justify-center items-center mt-5">
+        {/* 垂直引导线 */}
+        {/* <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
           <div className="w-1 sm:h-80 h-40 violet violet-gradient" />
-        </div>
+        </div> */}
 
-        <div>
+        <div id="box" className={`${styles.heroHeadBox}`}>
           {/* <h1 className={`${styles.heroHeadText}`}>
             Hi, I'm <span className="text-[#915eff]">Ruizheng</span>
           </h1> */}
@@ -67,10 +68,11 @@ const Hero = () => {
             A Full-Stack Engineer <br />A Photographer(考虑做轮播) <br />
             这里也可以考虑把我的那些霓虹灯、赛博特效加上
           </p> */}
+          {/* 这里的样式设置的比较蠢，是让子标题的字体一定小于父标题实现的 */}
           <p className={`${styles.heroRotateText}`}>
             <span className="txt-rotate">
               <span className="wrap" id="rotate">
-                {text}
+                A{text}
               </span>
             </span>
           </p>

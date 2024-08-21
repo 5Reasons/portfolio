@@ -20,9 +20,9 @@ import {
   tencent,
   alibaba,
   hkex,
-  carrent,
-  jobit,
-  tripguide,
+  ninegame,
+  bill,
+  sentiment,
   threejs,
 } from "../assets";
 
@@ -43,15 +43,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Data Analyst",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Project Manager",
     icon: backend,
   },
   {
@@ -206,75 +206,75 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "9Games VIP Systems",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Built the entire allowance shop in 9Game's new VIP system during the summer intership in Alibaba, including goods details, exchange process, game search, trade records pages.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: ninegame,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Xiaowu Bill",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to record daily expenses based in different categories like food, commuting and social. Enable users to see the records in charts or list, with filtering function based on time and categories.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "MySQL",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: bill,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Sentiment Visualization",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "My Undergraduate final project. Use NLP technology to do the keywords extraction and sentiment analysis. Implement 2 visualization dashboad base in Echarts.js and deployed in Github Pages.",
     tags: [
       {
-        name: "nextjs",
+        name: "Visualization",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Echarts",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CI/CD",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: sentiment,
     source_code_link: "https://github.com/",
   },
 ];
 
 const toRotateText = [
-  "A Software Engineer",
-  "A Photographer",
-  "A Football Fan",
-  "A Indie Music Lover",
+  " Software Engineer",
+  " Photographer",
+  " Football Fan",
+  "n Indie Music Fan",
 ];
 
 export {

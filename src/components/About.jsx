@@ -46,8 +46,8 @@ const About = () => {
         I am a full-stack software developer based in Hong Kong🇭🇰, deeply
         passionate about leveraging technology to enhance user experience, with
         a keen focus on refining even the smallest details. My background
-        includes internships in Software Development and Strategy & User
-        Research, where I've honed my skills in empathetic design and strategic
+        includes internships in Software Development and Strategy & Data
+        Analysis, where I've honed my skills in empathetic design and strategic
         thinking. Eager and open to explore diverse opportunities, I am excited
         about the prospect of applying my expertise and insights in new and
         challenging environments.

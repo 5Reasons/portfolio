@@ -27,9 +27,9 @@ import xingye from "./company/xingye.jpeg";
 import tencent from "./company/tencent.jpeg";
 import xiaomi from "./company/xiaomi.jpeg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import ninegame from "./ninegame.png";
+import bill from "./bill.png";
+import sentiment from "./sentiment.png";
 
 export {
   logo,
@@ -58,7 +58,7 @@ export {
   tencent,
   xingye,
   xiaomi,
-  carrent,
-  jobit,
-  tripguide,
+  ninegame,
+  bill,
+  sentiment,
 };

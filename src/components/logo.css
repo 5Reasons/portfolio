@@ -1,20 +1,32 @@
-@import url(//fonts.googleapis.com/css?family=Vibur);
+/* @import url(//fonts.googleapis.com/css?family=Vibur);
 @import url(//fonts.googleapis.com/css?family=Pacifico);
-
+@import url(//fonts.googleapis.com/css?family=Iceland); */
+@import url(//fonts.googleapis.com/css?family=Audiowide);
+/* @import url(//fonts.googleapis.com/css?family=VampiroOne); */
+:root {
+  --neon-border-color: #4710bd;
+}
+#box {
+  animation: flicker 1.5s infinite alternate;
+  border-color: #e5e3e3;
+  /* animation: blink linear infinite 3s; */
+  display: flex;
+  flex-direction: column; /* 或 row，根据你的需要 */
+}
 #rotate {
-  font-family: "Vibur";
+  font-family: "Audiowide";
   color: #c6e2ff;
   text-shadow: 0 -10px 100px, 0 0 1px, 0 0 0.2em #915eff, 0 0 0.1em #915eff,
     0 0 0.1em #915eff, 0 10px 3px #000;
 }
 #logo b {
-  font-family: "Pacifico";
+  font-family: "Audiowide";
   color: #c6e2ff;
   text-shadow: 0 -10px 100px, 0 0 1px, 0 0 0.1em #915eff, 0 0 0.1em #915eff,
     0 0 0.1em #915eff, 0 10px 3px #000;
 }
 #logo b span {
-  font-family: "Vibur";
+  font-family: "Audiowide";
   animation: blink linear infinite 2s;
 }
 #logo b span:nth-of-type(2) {
@@ -50,5 +62,27 @@
   92.5% {
     color: inherit;
     text-shadow: inherit;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    box-shadow: 0 0 0.5rem #e5e3e3, inset 0 0 0.5rem #e5e3e3,
+      0 0 1rem var(--neon-border-color), inset 0 0 1rem var(--neon-border-color),
+      0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
   }
 }
