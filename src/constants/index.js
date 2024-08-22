@@ -245,7 +245,7 @@ const projects = [
       },
     ],
     image: bill,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/5Reeson/react-node-bill",
   },
   {
     name: "Sentiment Visualization",
@@ -266,7 +266,8 @@ const projects = [
       },
     ],
     image: sentiment,
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://github.com/5Reeson/weibo-data-visualization.github.io",
   },
 ];
 

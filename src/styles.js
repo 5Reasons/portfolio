@@ -10,7 +10,7 @@ const styles = {
   // heroSubText:
   //   "text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
   heroRotateText:
-    "font-medium lg:text-[44px] sm:text-[36px] xs:text-[30px] text-[24px] lg:mt-[25px] sm:mt-[15px] xs:mt-[10px] mt-[10px]",
+    "font-medium lg:text-[44px] sm:text-[36px] xs:text-[30px] text-[24px] lg:mt-[15px] sm:mt-[15px] xs:mt-[10px] mt-[10px]",
   sectionHeadText:
     "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
   sectionSubText:
