@@ -7,8 +7,6 @@ const styles = {
     "border-4 w-auto rounded-2xl lg:py-[12px] sm:py-[10px] xs:py-[10px] py-[10px] lg:px-[30px] sm:px-[22px] xs:px-[16px] px-[10px]",
   heroHeadText:
     "font-black text-white lg:text-[70px] sm:text-[60px] xs:text-[50px] text-[40px]",
-  // heroSubText:
-  //   "text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
   heroRotateText:
     "font-medium lg:text-[44px] sm:text-[36px] xs:text-[30px] text-[24px] lg:mt-[15px] sm:mt-[15px] xs:mt-[10px] mt-[10px]",
   sectionHeadText:

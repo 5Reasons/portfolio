@@ -64,10 +64,7 @@ const Hero = () => {
               <span>Hi, </span>I'm <span>Reeson</span>
             </b>
           </div>
-          {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            A Full-Stack Engineer <br />A Photographer(考虑做轮播) <br />
-            这里也可以考虑把我的那些霓虹灯、赛博特效加上
-          </p> */}
+
           {/* 这里的样式设置的比较蠢，是让子标题的字体一定小于父标题实现的 */}
           <p className={`${styles.heroRotateText}`}>
             <span className="txt-rotate">

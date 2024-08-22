@@ -27,7 +27,7 @@ import xingye from "./company/xingye.jpeg";
 import tencent from "./company/tencent.jpeg";
 import xiaomi from "./company/xiaomi.jpeg";
 
-import ninegame from "./ninegame.png";
+import ninegame from "./ninegame.jpg";
 import bill from "./bill.png";
 import sentiment from "./sentiment.png";
 
