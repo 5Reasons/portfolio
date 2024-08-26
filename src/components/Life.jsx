@@ -18,10 +18,9 @@ const Life = () => {
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           - 📷 I'm passionate about photography and often wandering the city
-          with my Nikon Z series camera, completely immersed into the "flow"
-          status.
+          with my Nikon Z series camera.
           <br />- ✈️ Traveling is another love of mine. The Faroe Islands 🇫🇴🇫🇴🇫🇴
-          are currently at the top of my bucket list.
+          is my dream destination now .
           <br />- 👍 Stronglly recommend my favorite photographing & travelling
           Youtuber:
           <a
@@ -33,9 +32,8 @@ const Life = () => {
             Links TV.{" "}
           </a>
           Watching his videos is my top enjoy.
-          <br />- ⚽️ Football runs in my blood, and as a dedicated Arsenal fan
-          🅰️🔴⚪🔥, you'll often find me on the field or cheering for the
-          Gunners.
+          <br />- ⚽️ Football runs in my blood: a dedicated Arsenal fan
+          🅰️🔴⚪🔥, COYG!!!
           <br />- 🎸 Independent music is my jam. I really love music festivals
           and livehouse gigs, with a recent obsession for Russian post-rock,
           Taiwanese bands, and 90s rock.
