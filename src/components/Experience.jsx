@@ -59,10 +59,10 @@ const Experience = () => {
   return (
     <>
       {/* 标题大字部分 */}
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience</h2>
-      </motion.div>
+        <h2 className={styles.sectionHeadText}>Work Experiences</h2>
+      </div>
 
       {/* 时间轴 */}
       <div className="mt-20 flex flex-col">
