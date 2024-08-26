@@ -55,7 +55,7 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const Experience = () => {
+const Work = () => {
   return (
     <>
       {/* 标题大字部分 */}
@@ -76,4 +76,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Work, "work");

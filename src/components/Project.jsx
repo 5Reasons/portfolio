@@ -59,7 +59,7 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Project = () => {
   return (
     <>
       {/* 标题大字部分 */}
@@ -95,4 +95,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Project, "project");
