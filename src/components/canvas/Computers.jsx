@@ -37,11 +37,11 @@ const Computers = ({ isMobile }) => {
         positionRef.current = !positionRef.current;
       // 控制旋转方向和速度
       if (positionRef.current) {
-        meshRef.current.rotation.y += 0.0005; // 每帧绕 y 轴旋转
-        totalRotate.current += 0.0005;
+        meshRef.current.rotation.y += 0.0014; // 每帧绕 y 轴旋转
+        totalRotate.current += 0.0014;
       } else {
-        meshRef.current.rotation.y -= 0.0005; // 每帧绕 y 轴旋转
-        totalRotate.current -= 0.0005;
+        meshRef.current.rotation.y -= 0.0014; // 每帧绕 y 轴旋转
+        totalRotate.current -= 0.0014;
       }
     }
   });
