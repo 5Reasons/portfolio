@@ -31,6 +31,15 @@ import ninegame from "./ninegame.jpg";
 import bill from "./bill.png";
 import sentiment from "./sentiment.png";
 
+// life pictures:
+import hero from "./life/hero.png";
+import cocktail from "./life/cocktail.jpeg";
+import qinghai from "./life/qinghai.jpeg";
+import arsenal from "./life/arsenal.jpeg";
+import ktown from "./life/ktown.jpeg";
+import anaya from "./life/arsenal.jpeg";
+import malaysia from "./life/malaysia.jpeg";
+
 export {
   logo,
   backend,
@@ -61,4 +70,11 @@ export {
   ninegame,
   bill,
   sentiment,
+  hero,
+  cocktail,
+  qinghai,
+  arsenal,
+  ktown,
+  anaya,
+  malaysia,
 };

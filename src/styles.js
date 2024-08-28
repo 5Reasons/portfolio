@@ -13,6 +13,8 @@ const styles = {
     "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
   sectionSubText:
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
+  titleFont: "lg:text-[70px] sm:text-[60px] xs:text-[50px] text-[40px]",
+  heroSize: "lg:max-h-[45vh] sm:max-h-[45vh] xs:max-h-[40vh] max-h-[40vh]",
 };
 
 export { styles };

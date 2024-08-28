@@ -1,7 +1,25 @@
+import { useEffect } from "react";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+
+import "./life.css";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation, Mousewheel } from "swiper/modules"; // 导入需要的模块
+
+import {
+  hero,
+  qinghai,
+  cocktail,
+  arsenal,
+  ktown,
+  anaya,
+  malaysia,
+} from "../assets";
 
 const Life = () => {
   return (
@@ -20,7 +38,7 @@ const Life = () => {
           - 📷 I'm passionate about photography and often wandering the city
           with my Nikon Z series camera.
           <br />- ✈️ Traveling is another love of mine. The Faroe Islands 🇫🇴🇫🇴🇫🇴
-          is my dream destination now .
+          is my top dream destination now.
           <br />- 👍 Stronglly recommend my favorite photographing & travelling
           Youtuber:
           <a
@@ -43,7 +61,53 @@ const Life = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">to be done</div>
+      <div className="w-full mt-20 flex flex-wrap gap-7">
+        <section className="swiper-container h-">
+          <img className={`${styles.heroSize} hero`} src={hero} alt="" />
+          <Swiper
+            loop={true}
+            grabCursor={true}
+            speed={500}
+            effect="slide"
+            modules={[Navigation, Mousewheel]} // 引入导航和鼠标滚轮功能
+            navigation={true} // 启用导航按钮
+            mousewheel={{
+              invert: false,
+              sensitivity: 1,
+            }}
+            className="swiper"
+          >
+            <SwiperSlide>
+              <h1 className={`${styles.titleFont} title two`}>Malaysia</h1>
+              <img src={malaysia} alt="Malaysia" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <h1 className={`${styles.titleFont} title two`}>Qinghai</h1>
+              <img src={qinghai} alt="Qinghai" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <h1 className={`${styles.titleFont} title three`}>Anaya</h1>
+              <img src={anaya} alt="Anaya" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <h1 className={`${styles.titleFont} title four`}>Kennedy Town</h1>
+              <img src={ktown} alt="Kennedy Town" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <h1 className={`${styles.titleFont} title five`}>Arsenal</h1>
+              <img src={arsenal} alt="Arsenal" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <h1 className={`${styles.titleFont} title six`}>Cocktail</h1>
+              <img src={cocktail} alt="Cocktail" />
+            </SwiperSlide>
+          </Swiper>
+        </section>
+      </div>
     </>
   );
 };
