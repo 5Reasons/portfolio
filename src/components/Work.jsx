@@ -65,7 +65,7 @@ const Work = () => {
       </div>
 
       {/* 时间轴 */}
-      <div className="mt-20 flex flex-col">
+      <div className="lg:mt-15 sm:mt-10 xs:mt-5 mt-5 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => {
             return <ExperienceCard key={index} experience={experience} />;
