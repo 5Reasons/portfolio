@@ -61,7 +61,11 @@ const Life = () => {
         </motion.p>
       </div>
 
-      <div className="w-full mt-20 flex flex-wrap gap-7">
+      <h3 className={`${styles.lifeSubTitle} mt-5`}>
+        ⬇️ Some of my photography to show my life :D
+      </h3>
+
+      <div className="w-full mt-10 flex flex-wrap gap-7">
         <section className="swiper-container h-">
           <img className={`${styles.heroSize} hero`} src={hero} alt="" />
           <Swiper
