@@ -22,6 +22,25 @@ import {
 } from "../assets";
 
 const Life = () => {
+  // 标记并检测是否是移动设备
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    setIsMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <>
       {/* 标题大字部分 */}
@@ -80,10 +99,14 @@ const Life = () => {
             //   invert: false,
             //   sensitivity: 1,
             // }}
-            autoplay={{
-              delay: 2000, // 自动翻页的时间间隔，单位为毫秒
-              disableOnInteraction: false, // 用户交互后是否停止自动翻页
-            }}
+            autoplay={
+              isMobile
+                ? false
+                : {
+                    delay: 2000, // 自动翻页的时间间隔，单位为毫秒
+                    disableOnInteraction: false, // 用户交互后是否停止自动翻页
+                  }
+            }
             className="swiper"
           >
             <SwiperSlide>
