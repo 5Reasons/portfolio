@@ -9,7 +9,7 @@ import "./life.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules"; // 导入需要的模块
+import { Navigation, Autoplay } from "swiper/modules"; // 导入需要的模块
 
 import {
   hero,
@@ -74,12 +74,16 @@ const Life = () => {
             speed={500}
             effect="slide"
             // modules={[Navigation, Mousewheel]} // 引入导航和鼠标滚轮功能
-            modules={[Navigation]} // 引入导航
+            modules={[Navigation, Autoplay]} // 引入导航和自动播放
             navigation={true} // 启用导航按钮
             // mousewheel={{
             //   invert: false,
             //   sensitivity: 1,
             // }}
+            autoplay={{
+              delay: 2000, // 自动翻页的时间间隔，单位为毫秒
+              disableOnInteraction: false, // 用户交互后是否停止自动翻页
+            }}
             className="swiper"
           >
             <SwiperSlide>
