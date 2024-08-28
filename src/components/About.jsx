@@ -41,16 +41,16 @@ const About = () => {
       {/* 个人简介正文 */}
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px] text-justify"
+        className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
       >
         I am a full-stack software developer based in Hong Kong🇭🇰, deeply
-        passionate about leveraging technology to enhance user experience, with
-        a keen focus on refining even the smallest details. My background
-        includes internships in Software Development and Strategy & Data
-        Analysis, where I've honed my skills in empathetic design and strategic
-        thinking. Eager and open to explore diverse opportunities, I am excited
-        about the prospect of applying my expertise and insights in new and
-        challenging environments.
+        passionate about apply technology to enhance user experience, with a
+        keen focus on refining even the smallest details. My background includes
+        internships in Software Development and Strategy & Data Analysis, where
+        I've honed my skills in empathetic design and strategic thinking. Eager
+        and open to explore diverse opportunities, I am excited about the
+        prospect of applying my expertise and insights in new and challenging
+        environments.
       </motion.p>
 
       {/* 卡片 */}
