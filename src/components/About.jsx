@@ -41,7 +41,7 @@ const About = () => {
       {/* 个人简介正文 */}
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
+        className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px] text-justify"
       >
         I am a full-stack software developer based in Hong Kong🇭🇰, deeply
         passionate about leveraging technology to enhance user experience, with

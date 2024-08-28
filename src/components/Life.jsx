@@ -9,7 +9,7 @@ import "./life.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation, Mousewheel } from "swiper/modules"; // 导入需要的模块
+import { Navigation } from "swiper/modules"; // 导入需要的模块
 
 import {
   hero,
@@ -33,7 +33,7 @@ const Life = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-[17px] max-w-4xl leading-[30px]"
         >
           - 📷 I'm passionate about photography and often wandering the city
           with my Nikon Z series camera.
@@ -73,12 +73,13 @@ const Life = () => {
             grabCursor={true}
             speed={500}
             effect="slide"
-            modules={[Navigation, Mousewheel]} // 引入导航和鼠标滚轮功能
+            // modules={[Navigation, Mousewheel]} // 引入导航和鼠标滚轮功能
+            modules={[Navigation]} // 引入导航
             navigation={true} // 启用导航按钮
-            mousewheel={{
-              invert: false,
-              sensitivity: 1,
-            }}
+            // mousewheel={{
+            //   invert: false,
+            //   sensitivity: 1,
+            // }}
             className="swiper"
           >
             <SwiperSlide>

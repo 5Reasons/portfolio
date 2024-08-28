@@ -71,7 +71,7 @@ const Project = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-[17px] max-w-4xl leading-[30px]"
         >
           I truly enjoy the satisfaction that comes from programming. To date, I
           have completed several full-stack projects and continuously update a
