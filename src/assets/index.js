@@ -37,7 +37,7 @@ import cocktail from "./life/cocktail.jpeg";
 import qinghai from "./life/qinghai.jpeg";
 import arsenal from "./life/arsenal.jpeg";
 import ktown from "./life/ktown.jpeg";
-import anaya from "./life/arsenal.jpeg";
+import anaya from "./life/anaya.jpeg";
 import malaysia from "./life/malaysia.jpeg";
 
 export {
