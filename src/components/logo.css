@@ -22,8 +22,10 @@
 #logo b {
   font-family: "Audiowide";
   color: #c6e2ff;
-  text-shadow: 0 -10px 100px, 0 0 1px, 0 0 0.1em #915eff, 0 0 0.1em #915eff,
-    0 0 0.1em #915eff, 0 10px 3px #000;
+  /* text-shadow: 0 -10px 100px, 0 0 1px, 0 0 0.1em #915eff, 0 0 0.1em #915eff,
+    0 0 0.1em #915eff, 0 10px 3px #000; */
+  text-shadow: 0 0 1px, 0 0 0.1em #915eff, 0 0 0.1em #915eff, 0 0 0.1em #915eff,
+    0 10px 3px #000;
 }
 #logo b span {
   font-family: "Audiowide";
@@ -74,7 +76,7 @@
   54%,
   56%,
   100% {
-    box-shadow: 0 0 0.5rem #e5e3e3, inset 0 0 0.5rem #e5e3e3,
+    box-shadow: 0 0 0.7rem #e5e3e3, inset 0 0 0.7rem #e5e3e3,
       0 0 1rem var(--neon-border-color), inset 0 0 1rem var(--neon-border-color),
       0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color);
   }
